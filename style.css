@@ -1,6 +1,16 @@
 body {
   margin: 0;
   font-family: "Lucida Grande";
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -9,8 +19,45 @@ body {
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(image/gambar.jpg);
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  /*opacity: 0.9;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;*/
+  font-size: 4rem;
+  text-align: center;
+   font-weight: bold;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: black;
+    text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+  }
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+.fa {
+  margin-right: 5px;
 }
 
 header {
@@ -33,7 +80,6 @@ header {
 
 .header-left {
   float: left;
-  margin-left: -60px;
 }
 
 .header-right {
@@ -54,17 +100,124 @@ header {
   display: block;
 }
 
+.header-right .icon {
+  display: none;
+}
+
+/* bagian utama */
+.heading h2{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #5f5d60;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-wrapper {
+  height: 400px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.lesson-icon {
+  position: relative;
+  text-align: center;
+}
+
+.lesson-icon img{
+  width: 170px;
+  height: 170px; 
+  object-fit: cover;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3aeb5;
+  margin-left: 25px;
+  text-align: center;
+}
+
 footer img {
-  width: 150px;
+  width: 90px;
 }
 
 footer p {
   color: #b3aeb5;
   font-size: 12px;
+  padding: 2px;
 }
 
 footer {
-  padding-top: 30px;
+  padding-top: 2px;
   text-align: center;
 
 }
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.form-control form{
+  border-radius: 5px;
+  padding: 20px;
+  width: 60%;
+  margin-left: 250px;
+}
+.container-form{
+  background-color:  #f7f7f7;
+  width: 100%;
+  margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1900px) {
+.container{
+  float: none;
+  width: 100%;
+
+ }
+
+ @media screen and (max-width: 640px) {
+  .header-right a{display: none;}
+  .header-right a.icon {
+    float: right;
+    display: block;
+  }
+}
+
