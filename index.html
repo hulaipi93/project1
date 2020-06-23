@@ -1,10 +1,12 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Progate</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- Bagian header -->
@@ -19,21 +21,97 @@
         <div class="header-right">
           <a href="#" class="footer">Contact</a>
         </div>
-         <div class="header-right">
+        <div class="header-right">
           <a href="#" class="portofolio">Galeri</a>
         </div>
-         <div class="header-right">
+        <div class="header-right">
           <a href="#" class="home">Home</a>
+        </div>
+         <div class="header-right">
+          <a href="#" class="icon"><i class="fa fa-bars"></i></a>
         </div>
       </div>
     </header>
     <!-- Akhir bagian header -->
-     
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>Selamat Datang.</h1>
+        <h1>Bersama Kami Tim Pro2-E42.</h1>
+      </div>
+    </div>
+
+    <!-- Bagian Utama -->
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>TEAM</h2>
+        </div>
+        <div class="lessons">
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="image/Hulaipi.jpg">
+               <!-- <p>HTML & CSS</p> -->
+            </div>
+            <p class="txt-contents">Hulaipi </p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="image/KholilurRohman.jpg">
+              <!-- <p>jQuery</p> -->
+            </div>
+            <p class="txt-contents">Khoilur Rohman</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="image/rulli.jpg">
+              <!-- <p>Ruby</p> -->
+            </div>
+            <p class="txt-contents">Khoirulli Nurul Fatimah</p>
+          </div>
+          <div class="lesson">
+            <div class="lesson-icon">
+              <img src="image/iin.jpg">
+              <!-- <p>PHP</p> -->
+            </div>
+            <p class="txt-contents">Iin Tafa Ulin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Bagian Utama -->
+
     <!-- Bagian Footer -->
+    </div>
+        <div class="container-form">
+          <div class="form-control">
+            <form>
+              <h2 style="text-align: center; color: #5f5d60;">CONTACT</h2>
+              <label for="fname">Nama</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+              <label for="lname">Email</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+              <label for="country">Negara</label>
+              <select id="country" name="country">
+                <option value="usa">Indonesia</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+
+              <label for="subject">Pesan</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
     <footer>
         <div class="container">
           <img src="image/logo1.png">
           <p>&copy copyright 2020. Design by E42 DTS Batch 2.</p>
         </div>
-      </footer>
-    <!-- Akhir bagian footer -->
+    </footer>
+  </body>
+</html>
