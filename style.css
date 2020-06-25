@@ -196,9 +196,13 @@ footer {
     width: 50%;
     margin: 6px 0;
   }
+  
   footer p {
-  left: 40%;
+  
+  left: 35%;
+  
   }
+
 
 }
 
@@ -211,14 +215,25 @@ footer {
     
 }
 
-@media screen and (max-width: 678px) {
-  
- 
-  footer p {
-  left: 35%;
-  }
-
+@media screen and (max-width: 1285px) {
+   footer p {
+    left: 40%;
+  }  
 }
+
+@media screen and (max-width: 803px) {
+   footer p {
+    left: 35%;
+  }  
+}
+
+@media screen and (max-width: 496px) {
+   footer p {
+    left: 30%;
+  }  
+}
+
+
 
 
 input[type=text], select {
