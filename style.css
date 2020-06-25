@@ -154,19 +154,22 @@ header {
 }
 
 footer img {
-  width: 150px;
+  width: 100px;
+  left: 50%;
 }
 
 footer p {
   color: #b3aeb5;
   font-size: 12px;
-  padding: 2px;
+  position: absolute;
+  left: 43%;
+  top: 60%;
 }
 
 footer {
   padding-top: 2px;
   text-align: center;
-
+  position: relative;
 }
 
 
@@ -187,12 +190,16 @@ footer {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1300px) {
   
   .lesson{
     width: 50%;
     margin: 6px 0;
   }
+  footer p {
+  left: 40%;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -201,6 +208,16 @@ footer {
     width: 100%
   
   }
+    
+}
+
+@media screen and (max-width: 678px) {
+  
+ 
+  footer p {
+  left: 35%;
+  }
+
 }
 
 
