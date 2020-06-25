@@ -233,6 +233,12 @@ footer {
   }  
 }
 
+@media screen and (max-width: 326px) {
+   footer p {
+    left: 23%;
+  }  
+}
+
 
 
 
