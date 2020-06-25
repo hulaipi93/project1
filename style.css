@@ -233,9 +233,9 @@ footer {
   }  
 }
 
-@media screen and (max-width: 326px) {
+@media screen and (max-width: 400px) {
    footer p {
-    left: 23%;
+    left: 20%;
   }  
 }
 
